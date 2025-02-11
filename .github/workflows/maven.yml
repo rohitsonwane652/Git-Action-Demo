@@ -23,8 +23,8 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - name: List files in target directory
+      run: ls -al target/
 
       # Log in to Docker Hub
     - name: Log in to Docker Hub
